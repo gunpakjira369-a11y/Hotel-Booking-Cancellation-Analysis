@@ -63,9 +63,9 @@
 
 ## เว็บไซต์ที่เผยแพร่
 
-- **D3.js:** [(https://gunpakjira369-a11y.github.io/Hotel-Booking-Cancellation-Analysis/web/d3/index.html)]
-- **Chart.js:** [(https://gunpakjira369-a11y.github.io/Hotel-Booking-Cancellation-Analysis/web/chartjs/index.html)]
-- **GitHub Repository:** [(https://github.com/gunpakjira369-a11y/Hotel-Booking-Cancellation-Analysis)]
+- **D3.js:** https://gunpakjira369-a11y.github.io/Hotel-Booking-Cancellation-Analysis/web/d3/index.html
+- **Chart.js:** https://gunpakjira369-a11y.github.io/Hotel-Booking-Cancellation-Analysis/web/chartjs/index.html
+- **GitHub Repository:** https://github.com/gunpakjira369-a11y/Hotel-Booking-Cancellation-Analysis
 
 ## ผลที่คาดว่าจะได้รับ
 
@@ -77,7 +77,7 @@
 6. ได้เว็บไซต์ที่สามารถใช้งานและเข้าถึงได้ผ่านช่องทางออนไลน์ พร้อม Source Code บน GitHub
 7. ได้เอกสารแสดงกระบวนการทำงานและการแบ่งหน้าที่ของสมาชิกอย่างเป็นระบบ
 
-### สรุปสิ่งที่ทำ
+## สรุปสิ่งที่ทำ
 ดำเนินการตั้งแต่การทำความสะอาดและเตรียมข้อมูลการจองโรงแรม การวิเคราะห์ความแตกต่างของ Booking ที่ยกเลิกและไม่ยกเลิก การสร้างและเปรียบเทียบแบบจำลอง **Logistic Regression** และ **Random Forest** รวมถึงนำผลการวิเคราะห์มาพัฒนาเป็น **Interactive Data Visualization** ผ่านเว็บไซต์ เพื่อให้ผู้ใช้งานสามารถสำรวจและเปรียบเทียบข้อมูลภายใต้เงื่อนไขต่าง ๆ ผ่านกราฟและตัวกรองข้อมูลแบบ Interactive ได้ง่ายขึ้น โดยพัฒนา Web Visualization ด้วย **D3.js และ Chart.js** และนำเว็บไซต์ไป Deploy ให้สามารถเข้าถึงได้ผ่านระบบออนไลน์
 
 
