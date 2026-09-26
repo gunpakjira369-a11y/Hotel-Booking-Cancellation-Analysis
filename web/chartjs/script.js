@@ -2,9 +2,8 @@ Chart.defaults.font.family = "'Mali', cursive, sans-serif";
 Chart.defaults.color = '#60788A';
 
 const CSV_PATHS = [
-  '../../data/raw/hotel_bookings.csv',
-'../../data/raw/hotel_bookings.csv'
- 
+    '../../data/hotel_bookings.csv',
+    '../../data/hotel_bookings.csv'
 ];
 
 const COLORS = {
