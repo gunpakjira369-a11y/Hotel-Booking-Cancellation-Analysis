@@ -1,4 +1,4 @@
-const DATA_PATH='../data/hotel_bookings.csv';
+const DATA_PATH='../../data/raw/hotel_bookings.csv';
 let rawData=[];
 let resizeTimer=null;
 let scatterZoomTransform=d3.zoomIdentity;
