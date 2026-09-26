@@ -1,5 +1,24 @@
 # Hotel-Booking-Cancellation-Analysis
 
+## สมาชิก
+
+1. น.ส. จุฑามาศ ปริยานนท์
+2. น.ส. ภัคจิรา แอกทอง
+
+### บทบาทหน้าที่ 
+
+| สมาชิก | บทบาทหลัก |
+|---|---|
+| นางสาวภัคจิรา แอกทอง | Data Cleaning, Data Preparation, Documentation, GitHub |
+| นางสาวจุฑามาศ ปริยานนท์ | Data Analysis, Web Visualization, Modeling, Evaluation |
+
+## Dataset
+
+- **ชื่อ Dataset:** Hotel booking demand
+- **แหล่งข้อมูล:** Kaggle
+- **ผู้เผยแพร่ Dataset:** Jesse Mostipak
+- **ลิงก์ Dataset:** https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+
 ## คำถามวิจัยหลัก
 > **“ปัจจัยในการจองมีความเกี่ยวข้องกับการยกเลิก Booking หรือไม่?”**
 > 
@@ -20,21 +39,46 @@
 4. เพื่อสร้างและเปรียบเทียบแบบจำลอง Logistic Regression และ Random Forest สำหรับจำแนกสถานะการยกเลิก Booking และประเมินผลการทำงานของแบบจำลอง
 5. เพื่อพัฒนา Interactive Data Visualization ด้วย D3.js และ Chart.js สำหรับนำเสนอและสำรวจข้อมูลการจองและสถานะการยกเลิกผ่านกราฟและตัวกรองข้อมูลแบบ Interactive
 
-### สรุปสิ่งที่ทำ
+## กำหนดการประชุม
 
+| ครั้ง | ช่วงเวลา | ประเด็นที่ประชุม |
+|---|---|---|
+| ครั้งที่ 1 | สัปดาห์ที่ 1 | ค้นหาและเลือก Dataset พร้อมแบ่งหน้าที่สมาชิก |
+| ครั้งที่ 2 | สัปดาห์ที่ 1 | กำหนดคำถามหลัก คำถามที่ใช้ในการวิเคราะห์ และตรวจสอบข้อมูลเบื้องต้น |
+| ครั้งที่ 3 | สัปดาห์ที่ 2 | ตรวจสอบและทำความสะอาดข้อมูล (Data Cleaning) พร้อมเตรียมข้อมูลสำหรับการวิเคราะห์ |
+| ครั้งที่ 4 | สัปดาห์ที่ 2 | คัดเลือกตัวแปร กำหนด Target Variable เลือกและเปรียบเทียบ Model |
+| ครั้งที่ 5 | สัปดาห์ที่ 3 | ประเมินผล Model ตรวจสอบ Visualization, Web, Deployment และเตรียมงานก่อนส่ง |
+
+## วิธีรันโปรเจกต์
+
+### การรันโปรเจกต์
+1. Clone Repository
+2. เปิดไฟล์ `index.html` ของแต่ละเวอร์ชันผ่าน Web Browser
+3. หรือเปิดโปรเจกต์ผ่าน Local Server เพื่อให้สามารถโหลดไฟล์ข้อมูลได้อย่างถูกต้อง
+
+### โครงสร้าง Web Visualization
+
+- `web/d3/index.html` — เวอร์ชัน D3.js
+- `web/chartjs/index.html` — เวอร์ชัน Chart.js
+
+## เว็บไซต์ที่เผยแพร่
+
+- **D3.js:** [(https://gunpakjira369-a11y.github.io/Hotel-Booking-Cancellation-Analysis/web/d3/index.html)]
+- **Chart.js:** [(https://gunpakjira369-a11y.github.io/Hotel-Booking-Cancellation-Analysis/web/chartjs/index.html)]
+- **GitHub Repository:** [(https://github.com/gunpakjira369-a11y/Hotel-Booking-Cancellation-Analysis)]
+
+## ผลที่คาดว่าจะได้รับ
+
+1. ได้ชุดข้อมูลการจองโรงแรมที่ผ่านการตรวจสอบและทำความสะอาดข้อมูล พร้อมสำหรับการวิเคราะห์
+2. ได้ผลการวิเคราะห์ปัจจัยที่เกี่ยวข้องกับสถานะการยกเลิก Booking
+3. ได้แบบจำลองสำหรับจำแนกสถานะการยกเลิก Booking และผลการเปรียบเทียบระหว่าง Logistic Regression และ Random Forest
+4. ได้ผลการประเมินแบบจำลองด้วยตัวชี้วัดที่เหมาะสม และสามารถนำผลไปประกอบการสรุป Insight ได้
+5. ได้ Interactive Data Visualization จำนวน 2 เวอร์ชัน ได้แก่ D3.js และ Chart.js สำหรับนำเสนอข้อมูลชุดเดียวกัน
+6. ได้เว็บไซต์ที่สามารถใช้งานและเข้าถึงได้ผ่านช่องทางออนไลน์ พร้อม Source Code บน GitHub
+7. ได้เอกสารแสดงกระบวนการทำงานและการแบ่งหน้าที่ของสมาชิกอย่างเป็นระบบ
+
+### สรุปสิ่งที่ทำ
 ดำเนินการตั้งแต่การทำความสะอาดและเตรียมข้อมูลการจองโรงแรม การวิเคราะห์ความแตกต่างของ Booking ที่ยกเลิกและไม่ยกเลิก การสร้างและเปรียบเทียบแบบจำลอง **Logistic Regression** และ **Random Forest** รวมถึงนำผลการวิเคราะห์มาพัฒนาเป็น **Interactive Data Visualization** ผ่านเว็บไซต์ เพื่อให้ผู้ใช้งานสามารถสำรวจและเปรียบเทียบข้อมูลภายใต้เงื่อนไขต่าง ๆ ผ่านกราฟและตัวกรองข้อมูลแบบ Interactive ได้ง่ายขึ้น โดยพัฒนา Web Visualization ด้วย **D3.js และ Chart.js** และนำเว็บไซต์ไป Deploy ให้สามารถเข้าถึงได้ผ่านระบบออนไลน์
 
 
-## สมาชิก
-
-1. น.ส. จุฑามาศ ปริยานนท์
-2. น.ส. ภัคจิรา แอกทอง
-
-
-## Dataset
-
-- **ชื่อ Dataset:** Hotel booking demand
-- **แหล่งข้อมูล:** Kaggle
-- **ผู้เผยแพร่ Dataset:** Jesse Mostipak
-- **ลิงก์ Dataset:** https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
 
