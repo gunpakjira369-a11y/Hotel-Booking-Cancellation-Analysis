@@ -4,7 +4,7 @@
 1. น.ส. จุฑามาศ ปริยานนท์
 2. น.ส. ภัคจิรา แอกทอง
 # Dataset
-ชื่อ Dataset: Hotel booking demand
-แหล่งข้อมูล: Kaggle
-ผู้เผลแพร่ Dataset: Jesse Mostipak
-ลิงก์ Dataset:https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+- **ชื่อ Dataset:** Hotel booking demand
+- **แหล่งข้อมูล:** Kaggle
+- **ผู้เผยแพร่ Dataset:** Jesse Mostipak
+- **ลิงก์ Dataset:** https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
