@@ -77,8 +77,103 @@
 6. ได้เว็บไซต์ที่สามารถใช้งานและเข้าถึงได้ผ่านช่องทางออนไลน์ พร้อม Source Code บน GitHub
 7. ได้เอกสารแสดงกระบวนการทำงานและการแบ่งหน้าที่ของสมาชิกอย่างเป็นระบบ
 
-## สรุปสิ่งที่ทำ
-ดำเนินการตั้งแต่การทำความสะอาดและเตรียมข้อมูลการจองโรงแรม การวิเคราะห์ความแตกต่างของ Booking ที่ยกเลิกและไม่ยกเลิก การสร้างและเปรียบเทียบแบบจำลอง **Logistic Regression** และ **Random Forest** รวมถึงนำผลการวิเคราะห์มาพัฒนาเป็น **Interactive Data Visualization** ผ่านเว็บไซต์ เพื่อให้ผู้ใช้งานสามารถสำรวจและเปรียบเทียบข้อมูลภายใต้เงื่อนไขต่าง ๆ ผ่านกราฟและตัวกรองข้อมูลแบบ Interactive ได้ง่ายขึ้น โดยพัฒนา Web Visualization ด้วย **D3.js และ Chart.js** และนำเว็บไซต์ไป Deploy ให้สามารถเข้าถึงได้ผ่านระบบออนไลน์
+# prompt
+
+ฉันมีโปรเจกต์ Hotel Booking Dashboard ที่สร้างด้วย HTML, CSS และ JavaScript
+โดยใช้ข้อมูลจากไฟล์ `data/hotel_bookings.csv`
+
+ปัญหาหลักของโครงงานคือ
+
+> **“ปัจจัยในการจองมีความเกี่ยวข้องกับการยกเลิก Booking หรือไม่”**
+
+Dashboard พัฒนาด้วย **D3.js และ Chart.js** โดยใช้ข้อมูลจริงจาก
+`data/hotel_bookings.csv`
+
+---
+
+## การสร้าง Dashboard 
+
+Dashboard ต้องแสดงข้อมูลและการวิเคราะห์ดังต่อไปนี้
+
+### 1. Key Performance Indicators (KPIs)
+
+- **Total Bookings**
+- **Total Cancellations**
+- **Cancellation Rate**
+- **Average ADR**
+
+### 2. Cancellation Rate
+
+แสดงกราฟ **Cancellation Rate** เพื่อวิเคราะห์อัตราการยกเลิก Booking
+
+### 3. Lead Time กับ Cancellation
+
+แสดงกราฟที่แสดงความสัมพันธ์ระหว่าง **Lead Time กับ Cancellation**
+
+### 4. Market Segment
+
+แสดงกราฟวิเคราะห์ข้อมูลตาม **Market Segment**
+
+### 5. Deposit Type
+
+แสดงกราฟวิเคราะห์ข้อมูลตาม **Deposit Type**
+
+### 6. Hotel
+
+แสดงกราฟวิเคราะห์ข้อมูลตาม **Hotel**
+
+### 7. Model Evaluation
+
+มีส่วนสำหรับแสดงผล **Model Evaluation**
+
+### 8. Feature Importance
+
+มีส่วนสำหรับแสดง **Feature Importance**
+
+---
+
+# การปรับแก้ Dashboard
+
+ต้องการปรับ Dashboard เดิม โดย **ไม่สร้าง Dashboard ใหม่ทั้งหมด**
+
+โดยให้เน้นการวิเคราะห์และแสดง **Cancellation Rate**
+เพื่อให้ Dashboard สามารถตอบปัญหาหลักของโครงงานได้โดยตรง
+
+## 1. KPI
+
+ให้คง KPI เดิมไว้ ได้แก่
+
+- **Total Bookings**
+- **Total Cancellations**
+- **Cancellation Rate**
+- **Average ADR**
+
+---
+
+## 2. Main Charts
+
+ปรับกราฟหลัก 4 กราฟให้เน้น **Cancellation Rate**
+แทนการแสดงข้อมูล Overview ทั่วไป
+
+### 2.1 Cancellation Rate by Lead Time
+
+แบ่ง Lead Time เป็นช่วง
+
+- 0–7
+- 8–30
+- 31–60
+- 61–90
+- 91–180
+- 181–365
+- 366+
+
+แสดงอัตราการยกเลิก (%) ของแต่ละช่วง
+
+คำนวณจาก
+
+```text
+Cancellation Rate =
+จำนวน Booking ที่ยกเลิก / จำนวน Booking ทั้งหมดในกลุ่ม × 100
 
 
 
