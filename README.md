@@ -132,14 +132,14 @@ Dashboard ต้องแสดงข้อมูลและการวิเ�
 
 ---
 
-# การปรับแก้ Dashboard
+## การปรับแก้ Dashboard
 
 ต้องการปรับ Dashboard เดิม โดย **ไม่สร้าง Dashboard ใหม่ทั้งหมด**
 
 โดยให้เน้นการวิเคราะห์และแสดง **Cancellation Rate**
 เพื่อให้ Dashboard สามารถตอบปัญหาหลักของโครงงานได้โดยตรง
 
-## 1. KPI
+### 1. KPI
 
 ให้คง KPI เดิมไว้ ได้แก่
 
@@ -150,12 +150,12 @@ Dashboard ต้องแสดงข้อมูลและการวิเ�
 
 ---
 
-## 2. Main Charts
+### 2. Main Charts
 
 ปรับกราฟหลัก 4 กราฟให้เน้น **Cancellation Rate**
 แทนการแสดงข้อมูล Overview ทั่วไป
 
-### 2.1 Cancellation Rate by Lead Time
+#### 2.1 Cancellation Rate by Lead Time
 
 แบ่ง Lead Time เป็นช่วง
 
